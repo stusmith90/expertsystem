@@ -1,0 +1,271 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/firstbackground"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <!-- Row 1 with single column -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:padding="18dip"
+                android:text="1. Gender "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" >
+
+                <RadioButton
+                    android:id="@+id/answer1A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#000000"
+                    android:background="#F0F8FF" />
+
+                <RadioButton
+                    android:id="@+id/answer1B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="#000000"
+                    android:background="#F0F8FF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:padding="18dip"
+                android:text="2. Food Category"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" >
+
+                <RadioButton
+                    android:id="@+id/answer2A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+
+                <RadioButton
+                    android:id="@+id/answer2B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Non Vegetarians"
+                    android:textColor="#000000"
+                    android:background="#F0F8FF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:padding="18dip"
+                android:text="3. Goal"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" >
+
+                <RadioButton
+                    android:id="@+id/answer3A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Loss"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+
+                <RadioButton
+                    android:id="@+id/answer3B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muscle Building"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+                <RadioButton
+                    android:id="@+id/answer3C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Healthy Option"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:padding="18dip"
+                android:text="4. Lifestyle"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" >
+
+                <RadioButton
+                    android:id="@+id/answer4A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sedentary "
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+
+                <RadioButton
+                    android:id="@+id/answer4B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+
+                <RadioButton
+                    android:id="@+id/answer4C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Very Active"
+                    android:textColor="#000000"
+                    android:background="#F0F8FF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:padding="18dip"
+                android:text="5. Are You On A Low Budget?"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" >
+
+                <RadioButton
+                    android:id="@+id/answer5A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+
+                <RadioButton
+                    android:id="@+id/answer5B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" 
+                    android:background="#F0F8FF"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit" />
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
